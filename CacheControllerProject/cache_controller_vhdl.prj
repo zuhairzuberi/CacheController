@@ -1,0 +1,6 @@
+vhdl work "/home/student2/rmurari/COE758/cachetest/CACHE2/ipcore_dir/SRAM.vhd"
+vhdl work "/home/student2/rmurari/COE758/cachetest/CACHE2/SDRAMController.vhd"
+vhdl work "/home/student2/rmurari/COE758/cachetest/CACHE2/ipcore_dir/ila.vhd"
+vhdl work "/home/student2/rmurari/COE758/cachetest/CACHE2/ipcore_dir/icon.vhd"
+vhdl work "/home/student2/rmurari/COE758/cachetest/CACHE2/CPU_gen.vhd"
+vhdl work "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd"

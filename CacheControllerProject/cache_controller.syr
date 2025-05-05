@@ -1,0 +1,261 @@
+Release 13.3 - xst O.76xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: cache_controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cache_controller.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cache_controller"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : cache_controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student2/rmurari/COE758/cachetest/CACHE2/CPU_gen.vhd" in Library work.
+Architecture behavioral of Entity cpu_gen is up to date.
+Compiling vhdl file "/home/student2/rmurari/COE758/cachetest/CACHE2/SDRAMController.vhd" in Library work.
+Architecture behavioral of Entity sdramcontroller is up to date.
+Compiling vhdl file "/home/student2/rmurari/COE758/cachetest/CACHE2/ipcore_dir/SRAM.vhd" in Library work.
+Architecture sram_a of Entity sram is up to date.
+Compiling vhdl file "/home/student2/rmurari/COE758/cachetest/CACHE2/ipcore_dir/icon.vhd" in Library work.
+Architecture icon_a of Entity icon is up to date.
+Compiling vhdl file "/home/student2/rmurari/COE758/cachetest/CACHE2/ipcore_dir/ila.vhd" in Library work.
+Architecture ila_a of Entity ila is up to date.
+Compiling vhdl file "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" in Library work.
+ERROR:HDLParsers:526 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 35. Non array type STD_LOGIC can not have a index constraint.
+ERROR:HDLParsers:526 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 36. Non array type STD_LOGIC can not have a index constraint.
+ERROR:HDLParsers:3010 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 44. Entity cache_controller does not exist.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 47. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 47. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 49. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 49. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 72. Undefined symbol 'cache_mem'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 72. cache_mem: Undefined symbol (last report in this block)
+ERROR:HDLParsers:842 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 72. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 76. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 76. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 101. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 101. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 102. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 102. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 111. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 111. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 114. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 114. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 123. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 123. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 128. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 128. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 129. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 129. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. Undefined symbol 'CPU_RDY'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. CPU_RDY: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. Undefined symbol 'CPU_ADD'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. CPU_ADD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. Undefined symbol 'CPU_W_R'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. CPU_W_R: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. Undefined symbol 'CPU_CS'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. CPU_CS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. Undefined symbol 'CPU_Dout'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. CPU_Dout: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3430 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 136. More actuals found than formals in port map
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. Undefined symbol 'SDRAM_ADD'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. SDRAM_ADD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. Undefined symbol 'SDRAM_W_R'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. SDRAM_W_R: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. Undefined symbol 'SDRAM_MSTRB'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. SDRAM_MSTRB: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. Undefined symbol 'SDRAM_Din'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. SDRAM_Din: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. Undefined symbol 'SDRAM_Dout'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 137. SDRAM_Dout: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. Undefined symbol 'sWen'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. sWen: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. Undefined symbol 'sADD'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. sADD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. Undefined symbol 'sDin'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. sDin: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. Undefined symbol 'sDout'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 138. sDout: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 139. Undefined symbol 'CONTROL0'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 139. CONTROL0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 140. Undefined symbol 'CLK'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 140. CLK: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 140. Undefined symbol 'ila_data'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 140. ila_data: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 140. Undefined symbol 'TRIG0'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 140. TRIG0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 144. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 148. Undefined symbol 'TAG'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 149. Undefined symbol 'index'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 150. Undefined symbol 'offset'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 151. Undefined symbol 'CPU_ADDR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 151. CPU_ADDR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 156. index: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 158. Undefined symbol 'TAGWen'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 160. Undefined symbol 'state'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 162. TAGWen: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 168. state: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 177. = can not have such operands in this context.
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 179. Undefined symbol 'Dbit'.  Should it be: bit?
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 179. Dbit: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 179. Undefined symbol 'to_integer'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 179. to_integer: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 179. Undefined symbol 'unsigned'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 179. unsigned: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 180. Undefined symbol 'Vbit'.  Should it be: bit?
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 180. Vbit: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 182. Undefined symbol 'CPU_Din'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 185. CPU_Din: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 196. Undefined symbol 'memtag'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 196. memtag: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 196. TAG: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 204. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 204. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 204. Undefined symbol 'to_unsigned'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 204. to_unsigned: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 204. offset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 244. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 246. Undefined symbol 'STATES'.
+WARNING:HDLParsers:1406 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 142. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 254. Undefined symbol 'MSTRB'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 254. Undefined symbol 'SDRAM_MSTRB'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 254. SDRAM_MSTRB: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 255. Undefined symbol 'ADD'.  Should it be: AnD?
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 255. Undefined symbol 'CPU_ADD'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 255. CPU_ADD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 256. Undefined symbol 'W_R'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 256. Undefined symbol 'CPU_W_R'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 256. CPU_W_R: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 257. Undefined symbol 'DOUT'.  Should it be: OUT?
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 257. Undefined symbol 'CPU_Din'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 257. CPU_Din: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 258. Undefined symbol 'RDY'.
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 258. Undefined symbol 'sRDY'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 258. sRDY: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 259. Undefined symbol 'CS'.  Should it be: uS, pS, nS, mS, iS, fS or bS?
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 259. Undefined symbol 'CPU_CS'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 259. CPU_CS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 262. Undefined symbol 'ila_data'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 262. ila_data: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 267. Undefined symbol 'state'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 267. state: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. Undefined symbol 'Vbit'.  Should it be: bit?
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. Vbit: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. Undefined symbol 'to_integer'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. to_integer: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. Undefined symbol 'unsigned'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. unsigned: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. Undefined symbol 'index'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 269. index: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 270. Undefined symbol 'Dbit'.  Should it be: bit?
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 270. Dbit: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 271. Undefined symbol 'TAGWen'.
+ERROR:HDLParsers:1209 - "/home/student2/rmurari/COE758/cachetest/CACHE2/CacheController.vhd" Line 271. TAGWen: Undefined symbol (last report in this block)
+--> 
+
+
+Total memory usage is 588664 kilobytes
+
+Number of errors   :  131 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

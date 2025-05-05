@@ -1,0 +1,15 @@
+Running: /CMC/tools/xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/student1/zzuberi/Desktop/DesignProject1/TEST_isim_beh.exe -prj /home/student1/zzuberi/Desktop/DesignProject1/TEST_beh.prj work.TEST 
+ISim O.87xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/ipcore_dir/SRAM.vhd" into library work
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/SDRAMController.vhd" into library work
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/ipcore_dir/ila.vhd" into library work
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/ipcore_dir/icon.vhd" into library work
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/CPU_gen.vhd" into library work
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/CacheController.vhd" into library work
+Parsing VHDL file "/home/student1/zzuberi/Desktop/DesignProject1/TEST.vhd" into library work
+ERROR:HDLCompiler:1314 - "/home/student1/zzuberi/Desktop/DesignProject1/TEST.vhd" Line 71: Formal port/generic <states> is not declared in <cachecontroller>
+ERROR:HDLCompiler:854 - "/home/student1/zzuberi/Desktop/DesignProject1/TEST.vhd" Line 30: Unit <behavior> ignored due to previous errors.
+VHDL file /home/student1/zzuberi/Desktop/DesignProject1/TEST.vhd ignored due to errors
